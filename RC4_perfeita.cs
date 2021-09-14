@@ -8,12 +8,11 @@ namespace RC4
         static void Main(string[] args)
         {
             // Arquivo onde está o texto de entrada e onde vai o texto de saida
-      
-            FileStream file = new System.IO.FileStream("C:\\testes\\teste01.txt", System.IO.FileMode.Open, System.IO.FileAccess.ReadWrite);
+             FileStream file = new FileStream("C:/testes/teste01.txt", FileMode.Open, FileAccess.ReadWrite);
             //Variavel que armazenará o input em bytes
             byte[] input = new byte[file.Length];
             //Chave de criptografia
-            string stringKey = Console.ReadLine();
+            String stringKey = Console.ReadLine();
             //Chave de criptografia em bytes
             byte[] key = new byte[stringKey.Length];
             //Variavel para key-scheduling
